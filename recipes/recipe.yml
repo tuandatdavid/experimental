@@ -25,10 +25,12 @@ modules:
         - gdm
         - gnome
         - gnome-extra
+        - gnome-circle
         - git
         - zstd
         - plymouth
         - sudo
+        - gnome-control-center
 
   - type: default-flatpaks
     configurations:
