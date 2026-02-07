@@ -32,4 +32,9 @@ modules:
           - org.gnome.Loupe
       - scope: user # Also add Flathub user repo, but no user packages
 
+  - type: brew
+    nofile-limits: true # increase nofile limits
+    brew-analytics: false # disable telemetry
+    direct-pull: true
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
