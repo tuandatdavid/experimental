@@ -3,10 +3,10 @@
 # image will be published to ghcr.io/<user>/<name>
 name: experimental
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: This is my experimentak bluebuild image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image:  ghcr.io/bootcrew/arch-bootc
+base-image:  ghcr.io/tuandatdavid/arch-main
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -22,15 +22,16 @@ modules:
       packages:
         - fastfetch
         - flatpak
+        - gnome
+        - gnome-extra
 
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
         scope: system
         install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
-          - org.gnome.Loupe
-      - scope: user # Also add Flathub user repo, but no user packages
+          - app.zen_browser.zen
+          - me.iepure.devtoolbox
 
   - type: brew
     nofile-limits: true # increase nofile limits
