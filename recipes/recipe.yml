@@ -6,7 +6,7 @@ name: experimental
 description: This is my experimentak bluebuild image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image:  ghcr.io/bootcrew/arch-bootc
+base-image:  ghcr.io/tuandatdavid/arch-main
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
