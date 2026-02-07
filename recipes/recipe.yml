@@ -28,7 +28,7 @@ modules:
         - git
         - zstd
         - plymouth
-        - sudo-rs
+        - sudo
 
   - type: default-flatpaks
     configurations:
