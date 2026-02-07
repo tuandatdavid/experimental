@@ -28,7 +28,6 @@ modules:
         - gnome-circle
         - git
         - zstd
-        - plymouth
         - sudo
         - gnome-control-center
 
