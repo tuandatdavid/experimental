@@ -28,6 +28,10 @@ modules:
         - git
         - zstd
         - plymouth
+        - sudo-rs
+    remove:
+      packages:
+        - plymouth-gdm
 
   - type: default-flatpaks
     configurations:
