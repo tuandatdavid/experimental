@@ -55,7 +55,5 @@ modules:
     additional-repos: true
     auto-upgrade: true
     upgrade-interval: '3h'
-
-  - type: initramfs
     
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
