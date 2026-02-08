@@ -24,8 +24,6 @@ modules:
         - flatpak
         - gdm
         - gnome
-        - gnome-extra
-        - gnome-circle
         - git
         - zstd
         - sudo
@@ -54,11 +52,6 @@ modules:
       - 4269 # Alphabetical app grid
       - Caffeine
 
-  - type: soar
-    additional-repos: true
-    auto-upgrade: true
-    upgrade-interval: '3h'
-
   - type: systemd
     system:
       enabled:
@@ -66,5 +59,5 @@ modules:
         - brew-setup.service
         - brew-update.timer
         - brew-upgrade.timer
-    
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
